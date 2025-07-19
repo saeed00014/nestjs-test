@@ -12,9 +12,7 @@ export class CatsController {
   findAll(
     @Req() request: Request,
     @Res({ passthrough: true }) response: Response,
-    @Headers() headers,
   ) {
-    console.log(request.headers, headers);
     return { name: 'klsdjf' };
   }
 }
